@@ -47,6 +47,7 @@ autocmd VimEnter * wincmd p
 
 " NAVIGATION
 nnoremap <silent> <Leader>m :MRU<CR>
+nnoremap <Leader><Leader> :e#<CR>
 
 " USE ARROWS TO MOVE
 map <D-A-RIGHT> <C-w>l
