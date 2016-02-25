@@ -42,6 +42,7 @@ autocmd BufWritePre *.* :%s/\s\+$//e " Remove whitespaces on save
 let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
 nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>j :NERDTreeFind<CR>
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.git', '\.sass-cache', '\.swp']
@@ -57,7 +58,9 @@ map <D-A-DOWN> <C-w><C-w>
 map <D-A-UP> <C-w>W
 
 " RELOAD VIMRC
-map <leader>rr :source ~/.vimrc<CR>
+map <leader>s :source ~/.vimrc<CR>
 
 " CONTROL+T
 set wildignore+=*.log,*.sql,*.cache,vendor/*,tmp/*,app/assets/images*,public/*
+noremap <Leader>r :CommandTFlush<CR>
+
