@@ -44,6 +44,7 @@ let NERDTreeShowHidden=1
 nmap <leader>n :NERDTreeToggle<CR>
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.git', '\.sass-cache', '\.swp']
 
 " NAVIGATION
 nnoremap <silent> <Leader>m :MRU<CR>
