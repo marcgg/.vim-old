@@ -36,7 +36,7 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
-autocmd BufWritePre *.* :%s/\s\+$//e " Remove whitespaces on save
+autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 
 " NERDTree
 let NERDTreeMapActivateNode='<right>'
