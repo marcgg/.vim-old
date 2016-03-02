@@ -1,11 +1,8 @@
-" VIM > VI
-set nocompatible
-
 " LOADING
 execute pathogen#infect()
 
 " LEADER
-let mapleader=","
+let mapleader=" "
 
 " FILE TYPES
 filetype on
