@@ -35,3 +35,6 @@
 	path = bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
 
+[submodule "bundle/lightline"]
+	path = bundle/lightline
+	url = git@github.com:itchyny/lightline.vim.git
