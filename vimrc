@@ -45,6 +45,7 @@ autocmd VimEnter * wincmd p
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.git', '\.sass-cache', '\.swp']
 
 " NAVIGATION
+set showmatch
 nnoremap <Leader><Leader> :e#<CR>
 
 " USE ARROWS TO MOVE
