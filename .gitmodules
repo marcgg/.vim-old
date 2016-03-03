@@ -22,9 +22,6 @@
 [submodule "supertab"]
 	path = bundle/supertab
 	url = git@github.com:ervandew/supertab.git
-[submodule "mru"]
-	path = bundle/mru
-	url = git@github.com:yegappan/mru.git
 [submodule "nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
