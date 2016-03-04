@@ -38,7 +38,7 @@ autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 " NERDTree
 let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
-nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>, :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
