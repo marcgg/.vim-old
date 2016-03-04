@@ -40,9 +40,11 @@ let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
 nmap <leader>, :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.git', '\.sass-cache', '\.swp']
+if has("gui_macvim")
+  autocmd VimEnter * NERDTree
+  autocmd VimEnter * wincmd p
+endif
 
 " NAVIGATION
 set showmatch
