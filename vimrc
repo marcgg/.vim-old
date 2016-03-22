@@ -63,3 +63,6 @@ map <leader>s :source ~/.vimrc<CR>
 set wildignore+=*.log,*.sql,*.cache,vendor/*,tmp/*,app/assets/images*,public/*
 noremap <Leader>r :CommandTFlush<CR>
 
+" RAILS
+map <leader>a :AV<CR>
+
