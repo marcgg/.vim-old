@@ -66,3 +66,9 @@ noremap <Leader>r :CommandTFlush<CR>
 " RAILS
 map <leader>a :AV<CR>
 
+" ES6
+au BufNewFile,BufRead *.es6 set filetype=javascript
+
+" SWITCH SCHEME
+map <Leader>l :colorscheme Tomorrow<CR>
+map <Leader>k :colorscheme Tomorrow-Night<CR>
