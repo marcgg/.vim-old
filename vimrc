@@ -60,7 +60,7 @@ map <D-A-UP> <C-w>W
 map <leader>s :source ~/.vimrc<CR>
 
 " CONTROL+T
-set wildignore+=*.log,*.sql,*.cache,vendor/*,tmp/*,app/assets/images*,public/*
+set wildignore+=*.log,*.sql,*.cache,vendor/*,tmp/*,app/assets/images*,public/*,_build/*,deps/*
 noremap <Leader>r :CommandTFlush<CR>
 
 " RAILS
