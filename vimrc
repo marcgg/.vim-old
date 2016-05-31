@@ -35,6 +35,16 @@ set smartindent
 set autoindent
 autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 
+" SYNTASTIC
+let g:syntastic_mode_map = { 'mode': 'active',
+                            \ 'active_filetypes': ['es6', 'javascript'],
+                            \ 'passive_filetypes': ['ruby'] }
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_javascript_checkers = ['eslint']
+map <Leader>C :SyntasticCheck <CR>
+
 " NERDTree
 let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
