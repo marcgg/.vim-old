@@ -25,6 +25,9 @@ nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 set hidden
 set history=100
 
+" SWAP FILES
+set shortmess+=A
+
 " TEXT FORMATTING
 filetype indent on
 set nowrap
