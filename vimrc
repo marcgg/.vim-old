@@ -10,8 +10,8 @@ filetype plugin on
 
 " THEME & LAYOUT
 colorscheme Tomorrow-Night
-set guifont=Menlo\ Regular:h18
-set lines=35 columns=150
+set guifont=Menlo\ Regular:h16
+set lines=45 columns=140
 set colorcolumn=90
 set number
 syntax on
