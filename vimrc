@@ -38,6 +38,18 @@ set smartindent
 set autoindent
 autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 
+" POPIN HELP
+set noballooneval " Remove vim-ruby contextual popins that slow down everything
+
+" ALE
+let g:ale_lint_on_enter = 0
+let g:ale_sign_error = '••'
+let g:ale_sign_warning = '..'
+let g:ale_linters = { 'javascript': ['eslint'], 'ruby': ['rubocop'] }
+hi SignColumn ctermbg=black
+hi ALEErrorSign ctermbg=black ctermfg=red
+hi ALEWarningSign ctermbg=black ctermfg=red
+
 " NERDTree
 let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1

@@ -50,3 +50,6 @@
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/ale.vim"]
+	path = bundle/ale.vim
+	url = git@github.com:w0rp/ale.git
