@@ -15,7 +15,9 @@ set lines=45 columns=140
 set colorcolumn=90
 set number
 syntax on
-let g:gitgutter_sign_column_always=1
+
+" GIT GUTTER
+set signcolumn=yes
 
 " SEARCH
 set hlsearch
@@ -38,9 +40,6 @@ set smartindent
 set autoindent
 autocmd BufWritePre * :%s/\s\+$//e " Remove whitespaces on save
 
-" POPIN HELP
-set noballooneval " Remove vim-ruby contextual popins that slow down everything
-
 " ALE
 let g:ale_lint_on_enter = 0
 let g:ale_sign_error = '••'
@@ -49,6 +48,11 @@ let g:ale_linters = { 'javascript': ['eslint'], 'ruby': ['rubocop'] }
 hi SignColumn ctermbg=black
 hi ALEErrorSign ctermbg=black ctermfg=red
 hi ALEWarningSign ctermbg=black ctermfg=red
+
+" POPIN HELP
+set noballooneval " Remove vim-ruby contextual popins that slow down everything
+let g:netrw_nobeval = 1
+let g:ale_set_balloons = 0
 
 " NERDTree
 let NERDTreeMapActivateNode='<right>'
