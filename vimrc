@@ -79,8 +79,12 @@ map <D-A-UP> <C-w>W
 map <leader>s :source ~/.vimrc<CR>
 
 " CONTROL+T
-set wildignore+=*.log,*.sql,*.cache,vendor/*,tmp/*,app/assets/images*,public/*,_build/*,deps/*,node_modules/*
-noremap <Leader>r :CommandTFlush<CR>
+"set wildignore+=*.log,*.sql,*.cache,vendor/*,tmp/*,app/assets/images*,public/*,_build/*,deps/*,node_modules/*
+"noremap <Leader>r :CommandTFlush<CR>
+
+"CTRLP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+map <leader>t :CtrlP<CR>
 
 " RAILS
 map <leader>a :AV<CR>
