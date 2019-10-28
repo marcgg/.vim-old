@@ -17,7 +17,9 @@ set number
 syntax on
 
 " GIT GUTTER
-set signcolumn=yes
+if has("gui_macvim")
+  set signcolumn=yes
+endif
 
 " SEARCH
 set hlsearch
@@ -50,9 +52,11 @@ hi ALEErrorSign ctermbg=black ctermfg=red
 hi ALEWarningSign ctermbg=black ctermfg=red
 
 " POPIN HELP
-set noballooneval " Remove vim-ruby contextual popins that slow down everything
-let g:netrw_nobeval = 1
-let g:ale_set_balloons = 0
+if has("gui_macvim")
+  set noballooneval " Remove vim-ruby contextual popins that slow down everything
+  let g:netrw_nobeval = 1
+  let g:ale_set_balloons = 0
+endif
 
 " NERDTree
 let NERDTreeMapActivateNode='<right>'
