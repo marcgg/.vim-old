@@ -11,7 +11,7 @@ filetype plugin on
 " THEME & LAYOUT
 colorscheme Tomorrow-Night
 set guifont=Menlo\ Regular:h16
-set lines=45 columns=140
+set lines=50 columns=160
 set colorcolumn=90
 set number
 syntax on
@@ -20,6 +20,7 @@ syntax on
 if has("gui_macvim")
   set signcolumn=yes
 endif
+map <leader>gb :Gblame<CR>
 
 " SEARCH
 set hlsearch
