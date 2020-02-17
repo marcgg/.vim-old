@@ -89,6 +89,7 @@ map <leader>s :source ~/.vimrc<CR>
 "CTRLP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 map <leader>t :CtrlP<CR>
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 " RAILS
 map <leader>a :AV<CR>
