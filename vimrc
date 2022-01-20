@@ -85,7 +85,7 @@ map <leader>s :source ~/.vimrc<CR>
 
 " CONTROL+T
 "set wildignore+=*.log,*.sql,*.cache,vendor/*,tmp/*,app/assets/images*,public/*,_build/*,deps/*,node_modules/*
-noremap <Leader>r :CommandTFlush<CR>
+"noremap <Leader>r :CommandTFlush<CR>
 
 "CTRLP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
