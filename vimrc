@@ -91,6 +91,7 @@ map <leader>s :source ~/.vimrc<CR>
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 map <leader>t :CtrlP<CR>
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*node_modules*
+noremap <Leader>r :CtrlPClearCache<CR>
 
 " RAILS
 map <leader>a :AV<CR>
